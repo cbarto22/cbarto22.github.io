@@ -1,8 +1,13 @@
 h1 {
-    font-family: 'Comic Sans MS';
+    font-family: "Arial Black", Arial, sans-serif;
     color: darkgray;
     text-align: center;
 }
 body {
-    background-color: darksalmon;
+    max-width: 55rem;			  /* Keeps the page from overflowing on wide monitors */
+    margin: 0.5em auto;		      /* 0.5em is top and bottom margin. 'auto' for left and right centers the body on the page */
+    border: 1px solid black;	/* Surround the content with a solid black border */
+    border-radius: 5px;			  /* Round the corners of the body section */
+    padding: 0.75rem;			  /* Padding goes between the borders and the internal content */
+    background-color: darksalmon;	/* Contrast the body background from the page background */
 }
