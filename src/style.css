@@ -1,3 +1,7 @@
 h1 {
-    font-family: 'Comic Sans MS'
+    font-family: 'Comic Sans MS';
+    color: darkgray;
+}
+body {
+    color: darksalmon;
 }
