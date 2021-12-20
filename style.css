@@ -117,6 +117,7 @@ nav a {
 }
 .form-create-task {
 	display: flex;
+	margin-right: 50px;
 }
 
 /* Add rule for: */
