@@ -1,57 +1,31 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <title>Alphabet Kids</title>
-        <link rel="stylesheet" href="style.css">
-        <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
-    </head>
-    <body>
-        <h1>Alphabet Kids</h1>
-        <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin at arcu vitae nisl sodales commodo. In dapibus laoreet
-            ultricies. Nulla placerat risus et diam consectetur scelerisque. Ut hendrerit lectus vitae diam faucibus, at aliquet
-            arcu interdum. Nullam tincidunt tortor mauris, volutpat blandit arcu tristique vel. Nullam sed nisl euismod,
-            vestibulum velit a, dignissim quam. Mauris quis eros a sapien efficitur volutpat in eget felis. Orci varius natoque
-            penatibus et magnis dis parturient montes, nascetur ridiculus mus. Sed fringilla consectetur urna, et lacinia felis
-            dapibus vel. Aenean ac maximus neque. Phasellus congue nulla quis erat molestie, sed vestibulum odio accumsan. Sed
-            rhoncus massa vestibulum porttitor fermentum. Nullam sollicitudin, orci eu pharetra blandit, quam nulla ornare diam,
-            ut tristique lorem elit ultrices nisi. Suspendisse et dui lorem. Proin non imperdiet urna, nec luctus dui. Donec
-            ullamcorper imperdiet vehicula.
-        </p>
-        <p>
-            Proin ac felis efficitur, bibendum mauris a, posuere quam. Curabitur fermentum metus ac nulla placerat tristique.
-            Donec interdum facilisis elit, ut tincidunt dui. Praesent risus neque, luctus id convallis nec, dapibus vel ex.
-            Proin volutpat faucibus metus, eget auctor nulla tincidunt quis. Donec id eros elementum, consectetur neque ut,
-            facilisis neque. Nunc tempus nulla ut augue condimentum feugiat. Nullam tincidunt tempus lorem, sed congue tortor
-            blandit nec. Phasellus eget rhoncus nulla, in auctor urna. Suspendisse id vestibulum dolor, id tempus felis. Donec
-            facilisis porttitor lacus vitae finibus.
-        </p>
-        <p>
-            Cras id mollis velit, semper pharetra libero. Sed volutpat massa eu posuere maximus. Integer diam leo, sollicitudin
-            ut finibus sed, maximus sed tellus. Quisque vulputate vestibulum porta. Interdum et malesuada fames ac ante ipsum
-            primis in faucibus. Praesent ante nunc, condimentum sit amet mauris luctus, hendrerit fringilla libero. Vivamus
-            tempus diam ut justo elementum, ac rhoncus turpis sodales. Suspendisse sit amet tellus diam. Donec fringilla, ipsum
-            a varius pulvinar, odio mi ultrices sapien, quis sodales lacus dolor et purus. Nam imperdiet malesuada sem sit amet
-            tincidunt.
-        </p>
-        <p>
-            Phasellus hendrerit tristique orci, vitae finibus dui vehicula quis. Aenean vel ultrices dolor. Aenean tristique,
-            justo vel iaculis pulvinar, est metus vehicula libero, id ultrices massa diam eu enim. Sed fermentum vulputate
-            libero sed iaculis. Etiam ultrices pellentesque ante volutpat dignissim. In hac habitasse platea dictumst. Ut
-            euismod pharetra augue, a dapibus justo tincidunt vel. Mauris fermentum arcu ac augue egestas consequat. In neque
-            nisi, fringilla mattis tempor volutpat, blandit eu purus. Ut ullamcorper mi vel lectus tincidunt accumsan. Mauris
-            ultrices velit risus, ac interdum massa dignissim et.
-        </p>
-        <p>
-            Phasellus at vehicula arcu, sit amet sollicitudin lectus. Sed nec lobortis mi. Donec a tortor vulputate, efficitur
-            magna a, eleifend elit. Aenean auctor non urna molestie interdum. Nulla dapibus ex tortor, ac placerat nisi pharetra
-            eget. Curabitur pretium leo euismod sodales venenatis. Vestibulum malesuada hendrerit laoreet. Integer non tincidunt
-            lacus.
-        </p>
-    </body>
-    <footer>
-        <h6>Questions??</h6>
-        <p>Instructor: Elizabeth Barton</p>
-        <p><a href="mailto:lizawbarton@gmail.com">lizawbarton@gmail.com</a></p>
-    </footer>
+<html lang="en-us">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Lab1a</title>
+  <!-- Links to stylesheets -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body onload="readStorage(); loadLiveData()">
+  <!-- Your visible elements -->
+  <h1 class="title-font">Task List</h1>
+  <input type="checkbox" id="sort by date" class="toggle-switch" onclick="sortTasks()">
+  <label for="sort by date">Sort by date</label>
+  <input type="checkbox" id="filter completed tasks" class="toggle-switch" onclick="sortTasks()">
+  <label for="filter completed tasks">Filter completed tasks</label>
+  <ul class="tasklist" id="taskls">
+  </ul>
+  <form class="form-create-task" onsubmit="createTask(event)">
+    <input type="text" name="text" class="my-description" oninput="saveLiveText()" id="textInput" required>
+    <br>
+    <input type="date" name="date" oninput="saveLiveDate()" id="dateInput" required>
+    <br>
+    <button type="submit" class="round-button">Create Task</button>
+    <br>
+  </form>
+  <script src="js/script.js"></script>
+</body>
 </html>
