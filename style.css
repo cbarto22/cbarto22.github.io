@@ -96,7 +96,10 @@ nav a {
 
 /* Add your custom class rules here */
 .my-description {
-	width: 100%;
+	width: 50%;
+}
+.my-date {
+	align-content: center;
 }
 .round-button {
 	border-radius: 10%;
