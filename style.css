@@ -98,9 +98,6 @@ nav a {
 .my-description {
 	width: 50%;
 }
-.my-date {
-	align-content: center;
-}
 .round-button {
 	border-radius: 10%;
 	color: var(--primary-text);
@@ -117,6 +114,9 @@ nav a {
 }
 .borders {
 	box-shadow: 1px 1px 1px 1px;
+}
+.form-create-task {
+	display: inline;
 }
 
 /* Add rule for: */
