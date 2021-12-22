@@ -129,7 +129,7 @@ class Task {
             <input type="checkbox" id="${this.id}" onclick="updateTask(${this.id})" class="task-done checkbox-icon" ${this.done? " checked" :""}>
             <span class="task-description borders ${this.done? " line-through" : ""}">${this.text}</span>
             <span class="task-date">${this.prettyDate()}</span>
-            <button type="button" class="task-delete material-icon" onclick="deleteTask(${this.id})">remove</button>
+            <button type="button" class="task-delete material-icon" onclick="deleteTask(${this.id})">delete</button>
         </li>
         `
     }
